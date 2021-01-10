@@ -1,0 +1,4 @@
+#Force www:
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^casoviklaviraiteorije.com [NC]
+RewriteRule ^(.*)$ https://www.casoviklaviraiteorije.com/$1 [L,R=301,NC]

@@ -1,0 +1,517 @@
+body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+
+@media only screen and (max-width: 600px) {#main {margin-left: 0}}
+body, html {
+    height: 100%;    
+    background-position: center;
+    background-repeat: no-repeat;
+    position: static;
+    background-color: #fff;
+}
+
+/* sidenav css */
+
+
+/* sidenav css kraj */
+
+.bgimg {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: 70%;
+    background-repeat: no-repeat;
+    background-color: black;
+    background-image: url("/assets/img/kolibri3.png");
+    min-height: 85%;
+    min-width: 100%;
+}
+
+.bodyContent {
+    max-width: 1200px;
+    margin: auto;
+    background-color: #fff;
+    padding: 10px;
+    color: #000;
+    text-align: center;
+}
+
+p, span, h5 {
+    color: #808080; 
+
+}
+
+
+.bodyContentMiddle {
+    padding: 30px;
+    margin: auto;
+    width: 50%;
+    background-color: white;
+    color: #33333;
+    border: 2px solid #d9d9d9;
+    border-radius: 150px;
+    font-size: 40px;
+    text-align: center;
+}
+
+.imgLeft {
+    width:50%;
+    height: auto; 
+    float: left;
+    margin-right: 20px;
+}
+
+#panelDrums {
+    clear: both;
+}
+
+#pDrumer {
+ 
+    clear: right;
+}
+
+#pProfesor {
+ 
+    clear: right;
+}
+
+
+h1 {
+    margin: auto;
+}
+
+/*vesti*/
+a {
+    text-decoration: none;
+}
+
+
+.card {
+    padding: 0 1.7rem;
+    margin-bottom: 1rem;
+}
+.card .menu-content {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+.card .menu-content::before, .card .menu-content::after {
+    content: '';
+    display: table;
+}
+.card .menu-content::after {
+    clear: both;
+}
+.card .menu-content li {
+    display: inline-block;
+}
+.card .menu-content a {
+    color: #fff;
+}
+.card .menu-content span {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    font-size: 10px;
+    font-weight: 700;
+    font-family: 'Open Sans';
+    -webkit-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+}
+.card .wrapper {
+    background-color: #fff;
+    min-height: 500px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.2);
+}
+.card .wrapper:hover .data {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+}
+.card .data {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    -webkit-transform: translateY(calc(70px + 1em));
+    transform: translateY(calc(70px + 1em));
+    transition: -webkit-transform 0.3s;
+    transition: transform 0.3s;
+    transition: transform 0.3s, -webkit-transform 0.3s;
+}
+.card .data .content {
+    padding: 1em;
+    position: relative;
+    z-index: 1;
+}
+.card .author {
+    font-size: 12px;
+    color: #759900;
+}
+.card .title {
+    margin-top: 10px;
+}
+.card .text {
+    height: 70px;
+    margin: 0;
+}
+.card input[type='checkbox'] {
+    display: none;
+}
+.card input[type='checkbox']:checked + .menu-content {
+    -webkit-transform: translateY(-60px);
+    transform: translateY(-60px);
+}
+
+.card .wrapper {
+    background: url("/assets/img/aaa2.jpg") 20% 1%/cover no-repeat;
+}
+.card .date {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #0b090c;
+    color: #fff;
+    padding: 0.8em;
+}
+.card .date span {
+    display: block;
+    text-align: center;
+}
+.card .date .day {
+    font-weight: 700;
+    font-size: 24px;
+    text-shadow: 2px 3px 2px rgba(0, 0, 0, 0.18);
+}
+.card .date .month {
+    text-transform: uppercase;
+}
+.card .date .month,
+.card .date .year {
+    font-size: 12px;
+}
+.card .content {
+    background-color: #fff;
+    box-shadow: 0 5px 30px 10px rgba(0, 0, 0, 0.3);
+}
+.card .title a {
+    color: gray;
+}
+.card .menu-button {
+    position: absolute;
+    z-index: 999;
+    top: 16px;
+    right: 16px;
+    width: 25px;
+    text-align: center;
+    cursor: pointer;
+}
+.card .menu-button span {
+    width: 5px;
+    height: 5px;
+    background-color: gray;
+    color: gray;
+    position: relative;
+    display: inline-block;
+    border-radius: 50%;
+}
+.card .menu-button span::after, .card .menu-button span::before {
+    content: '';
+    display: block;
+    width: 5px;
+    height: 5px;
+    background-color: currentColor;
+    position: absolute;
+    border-radius: 50%;
+}
+.card .menu-button span::before {
+    left: -10px;
+}
+.card .menu-button span::after {
+    right: -10px;
+}
+.card .menu-content {
+    text-align: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+    transition: -webkit-transform 0.3s;
+    transition: transform 0.3s;
+    transition: transform 0.3s, -webkit-transform 0.3s;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+}
+.card .menu-content li {
+    width: 33.333333%;
+    float: left;
+    background-color: #77d7b9;
+    height: 60px;
+    position: relative;
+}
+.card .menu-content a {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+}
+.card .menu-content span {
+    top: -10px;
+}
+
+form {
+    margin: auto;
+    width: 50%;
+    text-align: center;
+}
+
+/* navbar turning (okretanje)*/
+/* Create a Parallax Effect */
+.bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 60%;
+    background-color: black;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* First image (Logo. Full height) */
+.bgimg-1 {
+    height: 50%;
+    background-image: url('/assets/img/kolibri4.png');
+    min-height: 100%;
+}
+
+/* Second image (Portfolio) */
+.bgimg-2 {
+    background-image: url("/w3images/parallax2.jpg");
+    min-height: 400px;
+}
+
+/* Third image (Contact) */
+.bgimg-3 {
+    background-image: url("/w3images/parallax3.jpg");
+    min-height: 400px;
+}
+
+.w3-wide {letter-spacing: 10px;}
+.w3-hover-opacity {cursor: pointer;}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1600px) {
+    .bgimg-1, .bgimg-2, .bgimg-3 {
+        background-attachment: scroll;
+        min-height: 70%;
+    }
+}
+
+
+#buttonMuteUnmute{
+    width: 50px;
+    height: auto;
+}
+
+/* navbar turning (okretanje)*/
+ul {
+    margin: 0;
+    padding-top: 10px;
+    display: flex;
+    float: left;
+}
+
+ul li {
+    position: relative;
+    list-style: none;
+    margin: auto;
+    padding: 15px;
+}
+
+ul li a {
+    position: relative;
+    height: 30px;
+    display: block;
+    text-decoration: none;
+    overflow: hidden;
+    font-size: 11px;
+    font-weight: 600;               
+}
+
+ul li a span {
+    width: 100%;
+    height: 100%;
+    display: block;
+    transition: 0.9s;
+    color: #70a983;
+
+
+}
+
+.logInRight li a span {
+    color: #339980;
+}
+
+li#scheduleLinkGreenRight a span {
+    color: #bfbfbf;
+}
+
+ul li a span:nth-child(1) {
+    color: #333333;
+}
+
+.logInRight li a span:nth-child(1) {
+    color: #339980;
+    border-bottom: 1px solid #d9d9d9;
+}
+
+li#scheduleLinkGreenRight a span:nth-child(1) {
+    color: #bfbfbf;
+    border-bottom: 1px solid #339980;
+}
+
+ul li a span:nth-child(2) {
+    color: #70a983;
+}
+
+.logInRight li a span:nth-child(2) {
+    color: #70a983;
+}
+
+ul li:hover a span:nth-child(1) {
+    transform: translateY(-100%);
+}
+
+ul li:hover a span:nth-child(2) {
+    transform: translateY(-100%);
+    border-bottom: 1px solid #70a983;
+}
+
+.logInRight li:hover a span:nth-child(2) {
+    /*                color: #c4c49c;*/
+    transform: translateY(-100%);
+    border-bottom: 2px solid #fff;
+}
+
+.hrAfterLeftAndRight {
+    clear: both;
+}
+
+/* navbar turning (okretanje)*/
+.logInRight {
+    float: right;
+}
+
+
+/* navbar turning (okretanje)*/
+
+footer {
+    clear: both;
+    margin: auto;
+    width: 100%;
+    display: table;
+    background-color: #f2f2f2;
+    /*                border-top: 1px solid #d9d9d9;*/
+    color: #4d4d4d;
+}
+
+#one, #two, #three {
+    margin: auto;
+    padding: 50px;
+    display: table-cell;
+    width: 33%;
+    height: auto;
+    display: block;
+    vertical-align: middle;
+    text-align: center;
+    float: left;
+    /*                font-style: italic;*/
+}
+
+@media only screen and (max-width: 900px) {
+
+    #one, #two, #three {
+        display: block;
+        float: left;
+        clear: both;
+        width: 100%;
+        padding: 20px;
+    }
+}
+
+.footerFaFa {
+    font-size:30px; 
+    padding: 20px;
+}
+
+
+/* REEEEEEEEEESPOPOOOOOOOOOOOOOOONSIVEEEEEEEEEEEEEEEEEEE */  
+.topnav {
+    overflow: hidden;   
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    background-color: white;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+
+}
+
+
+.topnav2 {
+    display: none;
+
+}
+
+@media screen and (max-width: 1235px) {
+    .topnav {width: 0; height: 0;}
+    .topnav li{display: none;}
+    .logInRight {display: none;}
+    .topnav2 {display: block;  position: relative}
+    .topnav2 a{display: none;}
+
+    .topnav2 a.icon {
+        position: absolute;
+        right: 5px;
+        top: 0;
+        float: right;
+        display: block;
+        color: white;
+        z-index: 1;
+    }
+}
+
+
+
+
+@media screen and (max-width: 1235px) {
+    .topnav2.responsive {position: relative; background-color: #000;}
+    .topnav2.responsive a.icon {
+        position: absolute;
+        right: 5px;
+        top: 0;
+        padding: 0px;
+        color: #fff;
+        background-color: #000;
+    }
+    .topnav2.responsive a{
+        padding: 12px;
+        float: none;
+        display: block;
+        text-align: left;
+        background-color: #000;
+        color: #fff;
+    }
+    
+    .topnav2.responsive a:not(:last-child){
+        border-bottom: 1px solid #fff;
+    }
+
+    .topnav2.responsive a:hover {
+        color: #70a983;
+    }
+}
+
+
+/* REEEEEEEEEESPOPOOOOOOOOOOOOOOONSIVEEEEEEEEEEEEEEEEEEE end */  
+

@@ -1,0 +1,33 @@
+/* PHOTO GALLERY */
+
+.gallery-wrapper .gallery {
+    margin-bottom: 32px;    
+}
+
+.gallery-wrapper .gallery a {
+    position: relative;        
+}
+
+@media screen and (min-width: 1200px) {
+    .gallery-wrapper .gallery a {
+        display: block;
+        height: 320px;
+        overflow: hidden;
+    }
+}
+.gallery-wrapper .gallery img {
+    max-width: 100%;
+    height: auto;
+}
+
+@media screen and (min-width: 1200px) {
+    .gallery-wrapper .gallery img {
+    max-width: 100%;
+    height: auto;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+}
